@@ -1,7 +1,9 @@
 {
   "type": "module",
   "dependencies": {
-
+    "express": "^4.17.1",
+    "react": "^17.0.2",
+    "axios": "^0.21.1"
   },
   "devDependencies": {
   }
