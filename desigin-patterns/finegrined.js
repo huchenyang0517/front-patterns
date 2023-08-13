@@ -39,20 +39,23 @@ function cleanUp(effect) {
 }
 
 function useEffect(callback) {
+    const effect = {
+        execute: null,
+        deps: new Set(),
+    };
+
     const execute = () => {
         cleanUp(effect);
         effectStack.push(effect);
-    }
-    try {
-        callback();
-    } finally {
-        effectStack.pop();
-    }
+        try {
+            callback();
+        } finally {
+            effectStack.pop();
+        }
+    };
 
-    const effect = {
-        execute,
-        deps: new Set(),
-    }
+    effect.execute = execute;
+    execute();
 }
 
 const [num, setNum] = useState(1);
