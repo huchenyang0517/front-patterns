@@ -1,3 +1,4 @@
+//Pass reusable logic down as props to components throughout your application
 import React from "react";
 
 //日志记录 HOC

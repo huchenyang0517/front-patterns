@@ -1,3 +1,4 @@
+//Use a central mediator object to handle communication between components
 class ChatRoom {
     logMessage(user, message) {
         const time = new Date();

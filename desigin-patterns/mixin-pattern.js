@@ -1,3 +1,4 @@
+//Add functionality to objects or classes without inheritance
 class Dog {
     constructor(name) {
         this.name = name;

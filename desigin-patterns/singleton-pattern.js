@@ -1,3 +1,4 @@
+//Share a single global instance throughout our application
 let instance;
 let counter = 0;
 

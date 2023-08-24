@@ -1,3 +1,4 @@
+//Use observables to notify subscribers when an event occurs
 import { ToastContainer, toast } from "react-toastify";
 import React from "react";
 import { Button, Switch, FormControlLabel } from "@material-ui/core";

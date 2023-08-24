@@ -1,3 +1,4 @@
+//Intercept and control interactions to target objects
 const person = {
     name: "John Doe",
     age: 42,

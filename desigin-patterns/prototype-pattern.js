@@ -1,3 +1,4 @@
+//Share properties among many objects of the same type
 class Dog {
     constructor(name) {
         this.name = name;
